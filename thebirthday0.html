@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday Niss!</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #4f4cf5 0%, #c0006a 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.658);
+        }
+        
+        .message {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: rgb(255, 255, 255);
+        }
+        
+        .handwriting {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: handwriting 5s steps(30) forwards infinite;
+            color: white;
+        }
+        
+        @keyframes handwriting {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+        .anissa {
+            width: 200px;
+            margin-top: 20px;
+            animation: moveUpDown 2s infinite;
+        }
+        
+        @keyframes moveUpDown {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }}
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Happy Birthday Anissa Sahda Aulia!</h1>
+        <p class="message">Happy birthday Niss..<br>
+            kamu udah tua duluan yaa, udah 20 tahun kau hidup Niss.. <br>
+            semangatlah ya kuliahnya biar bisa S.T. bareng-bareng.. <br>
+            <br>
+            pokoknya "I wish all the best for you my dear.. God bless you"
+        <div class="handwriting">
+            <span>H</span>
+            <span>a</span>
+            <span>p</span>
+            <span>p</span>
+            <span>y</span>
+            <span> </span>
+            <span>B</span>
+            <span>i</span>
+            <span>r</span>
+            <span>t</span>
+            <span>h</span>
+            <span>d</span>
+            <span>a</span>
+            <span>y</span>
+            <span>!</span>
+        </div>
+        <img class="anissa" src="Anissa.jpeg" alt="Anissa">
+    </div>
+</body>
+</html>

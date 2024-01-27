@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOW NISS</title>
+    <style>
+body {
+    background: linear-gradient(120deg, #f4eef5 0%, #6b5759 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(68, 31, 31);
+}
+
+.button-container {
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background: #ff47a3;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+    </style>
+</head>
+<body>
+    <video id="birthdayVideo" controls autoplay muted>
+        <source src="hi.mp4" type="video/mp4">
+    </video>
+    <div class="button-container" id="buttonContainer">
+        <button class="button" onclick="location.href='thebirthday0.html'">lanjut</button>
+    </div>
+
+    <script>
+        var video = document.getElementById('birthdayVideo');
+        var buttonContainer = document.getElementById('buttonContainer');
+
+        video.onended = function() {
+            buttonContainer.style.display = "flex";
+        };
+    </script>
+</body>
+</html>
